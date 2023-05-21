@@ -118,6 +118,24 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* overflow: hidden; */
+        /* padding: 0.5rem; */
+      }
+
+      .logo {
+        width: 100%;
+        max-width: 100px;
+      }
+
+      .trial {
+        border: none;
+        padding: 0.5rem 1rem;
+        background-color: white;
+        color: var(--VeryDarkCyan);
+        font-weight: var(--fw-bold);
+        font-size: 0.5rem;
+        box-shadow: 0.3rem 0.3rem 0.5rem #d6d5d5;
+        border-radius: 1rem;
       }
 
       .title-image {
@@ -140,6 +158,7 @@
       }
 
       .title p {
+        font-size: 0.85rem;
       }
 
       .get-started {
@@ -156,6 +175,48 @@
         box-shadow: 0rem 0.5rem 2rem #c5c5c5;
       }
 
+      .illustration-text {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      .illustration {
+        text-align: center;
+        color: var(--VeryDarkCyan);
+        border-radius: 1rem;
+        box-shadow: 0.5rem 0.5rem 1rem #dadada;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .illustration h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.2em;
+      }
+
+      .illustration p {
+        font-size: 0.8em;
+        opacity: 0.6;
+      }
+
+      .ready {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0.5rem 0.5rem 1rem #dadada;
+        padding: 2.5rem 0rem;
+      }
+
+      footer {
+        background-color: var(--VeryDarkCyan);
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -168,7 +229,7 @@
   <body>
     <main>
       <nav>
-        <img src="images/logo.svg" alt="logo" />
+        <img class="logo" src="images/logo.svg" alt="logo" />
         <button class="trial" type="submit">Try It Free</button>
       </nav>
 
@@ -192,6 +253,9 @@
 
       <section class="illustration-text">
         <div class="illustration">
+          <div class="illustration-image">
+            <img src="images/illustration-grow-together.svg" alt="" />
+          </div>
           <div class="text-section">
             <h2>Grow Together</h2>
             <p>
@@ -200,11 +264,11 @@
               miss out on with a feedback form.
             </p>
           </div>
-          <div class="illustration-image">
-            <img src="images/illustration-grow-together.svg" alt="" />
-          </div>
         </div>
         <div class="illustration">
+          <div class="illustration-image">
+            <img src="images/illustration-flowing-conversation.svg" alt="" />
+          </div>
           <div class="text-section">
             <h2>Flowing Conversations</h2>
             <p>
@@ -213,11 +277,11 @@
               flow.
             </p>
           </div>
-          <div class="illustration-image">
-            <img src="images/illustration-flowing-conversation.svg" alt="" />
-          </div>
         </div>
         <div class="illustration">
+          <div class="illustration-image">
+            <img src="images/illustration-your-users.svg" alt="" />
+          </div>
           <div class="text-section">
             <h2>Your Users</h2>
             <p>
@@ -225,9 +289,6 @@
               authentication solution. This means, once signed in to your app,
               your users can start chatting immediately.
             </p>
-          </div>
-          <div class="illustration-image">
-            <img src="images/illustration-your-users.svg" alt="" />
           </div>
         </div>
       </section>
