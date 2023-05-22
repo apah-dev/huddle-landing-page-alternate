@@ -214,7 +214,39 @@
       }
 
       footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
         background-color: var(--VeryDarkCyan);
+        color: var(--VeryPaleCyan);
+        padding-top: 8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 4rem;
+      }
+
+      .huddle {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .lorem,
+      .email,
+      .phone {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .location-icon,
+      .phone-icon,
+      .email-icon {
+        max-width: 20px;
+        max-height: 18px;
       }
 
       .attribution {
@@ -299,16 +331,27 @@
 
       <footer>
         <aside class="huddle">
-          <img src="images/logo.svg" alt="" />
-          <img src="images/icon-location.svg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-          <img src="images/icon-phone.svg" alt="" />
-          <p>+1-543-123-4567</p>
-          <img src="images/icon-email.svg" alt="" />
-          <p>example@huddle.com</p>
+          <div class="huddle-logo">
+            <img src="images/logo.svg" alt="" />
+          </div>
+
+          <div class="lorem">
+            <img class="location-icon" src="images/icon-location.svg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+
+          <div class="phone">
+            <img class="phone-icon" src="images/icon-phone.svg" alt="" />
+            <p>+1-543-123-4567</p>
+          </div>
+
+          <div class="email">
+            <img class="email-icon" src="images/icon-email.svg" alt="" />
+            <p>example@huddle.com</p>
+          </div>
         </aside>
         <aside>
           <div class="about">
@@ -325,11 +368,12 @@
               <li>Contact Us</li>
             </ul>
           </div>
-          <div class="icons"><</div>
-          <div class="copyright">
-            <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
-          </div>
+          <div class="icons"></div>
         </aside>
+
+        <div class="copyright">
+          <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+        </div>
         <div class="author">
           <p class="attribution">
             Challenge by
