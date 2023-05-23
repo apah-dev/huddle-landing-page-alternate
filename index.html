@@ -110,6 +110,8 @@
       main {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 1rem;
         gap: 4rem;
       }
@@ -207,10 +209,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 1.5rem;
         border-radius: 1rem;
-        box-shadow: 0.5rem 0.5rem 1rem #dadada;
+        box-shadow: 0 -1px 5px #c9c9c9;
         padding: 2.5rem 0rem;
+        width: 100%;
+        max-width: 28rem;
+        background-color: white;
+        transform: translate(0%, 80%);
+        z-index: 999;
       }
 
       footer {
