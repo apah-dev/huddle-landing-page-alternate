@@ -11,6 +11,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -255,6 +262,27 @@
       .email-icon {
         max-width: 20px;
         max-height: 18px;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .icons .icon {
+        border: 1px solid white;
+        padding: 0.5rem;
+        border-radius: 50%;
+        color: white;
+      }
+
+      .icon:hover {
+        border: 1px solid #e882e8;
+        color: #e882e8;
+        cursor: pointer;
+        transition: 0.3s;
       }
 
       .attribution {
